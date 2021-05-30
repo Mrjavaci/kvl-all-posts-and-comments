@@ -1,0 +1,17 @@
+{
+    "name": "javaci/php-rss",
+    "authors": [
+        {
+            "name": "Mrjavaci",
+            "email": "tr.osmantaha@gmail.com"
+        }
+    ],
+    "require": {
+        "debril/feed-io": "^4.9",
+        "guzzlehttp/guzzle": "^7.0",
+      "ext-simplexml": "*",
+        "laravie/parser": "^2.0",
+        "ext-json": "*"
+    },
+    "description": ""
+}
