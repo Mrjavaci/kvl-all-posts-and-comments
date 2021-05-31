@@ -13,10 +13,10 @@ for ($x = 1; $x <= 39; $x++) {
         $arr = xmlToArray(simplexml_load_string($body));
         foreach ($arr["feed"]["entry"] as $value) {
             $title = $value["title"]["$"];
-            if (!is_dir("datas/page_".$x)){
-                mkdir("datas/page_".$x);
+            if (!is_dir(__DIR__."/datas/page_".$x)){
+                mkdir(__DIR__."/datas/page_".$x);
             }
-            $fileName = "datas/page_".$x."/" . $title . ".json";
+            $fileName = __DIR__."/datas/page_".$x."/" . $title . ".json";
             touch($fileName);
             file_put_contents($fileName, json_encode($value));
             echo $title." - yazdırıldı \n";
@@ -26,12 +26,12 @@ for ($x = 1; $x <= 39; $x++) {
     }
 }
 
-$datasFolder = array_diff(scandir("datas"), array('.', '..', '.DS_Store'));
+$datasFolder = array_diff(scandir(__DIR__."/datas"), array('.', '..', '.DS_Store'));
 $filesArray = array();
 foreach ($datasFolder as $folder) {
-    $files = array_diff(scandir("datas/" . $folder), array('.', '..', ".DS_Store"));
+    $files = array_diff(scandir(__DIR__."/datas/" . $folder), array('.', '..', ".DS_Store"));
     foreach ($files as $file) {
-        array_push($filesArray, "datas/" . $folder . "/" . $file);
+        array_push($filesArray,__DIR__. "/datas/" . $folder . "/" . $file);
     }
 }
 
