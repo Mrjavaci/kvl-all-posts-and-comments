@@ -10,6 +10,20 @@ class RegexHelper
         $this->body = $body;
     }
 
+    public function getImagesArray()
+    {
+        $re = '/<img(.*)\/>/m';
+        preg_match_all($re, $this->body, $matches, PREG_SET_ORDER, 0);
+        $reArray = array();
+        foreach ($matches as $match) {
+            $regex = '/data-orig-file="(.*)"/U';
+            preg_match_all($regex, $match[0], $matchesImagesUrls, PREG_SET_ORDER, 0);
+            array_push($reArray, $matchesImagesUrls[0][1]);
+        }
+        return $reArray;
+    }
+
+
     public function normalizeComment(): array
     {
         $returnArray = array();
@@ -22,7 +36,7 @@ class RegexHelper
     {
         $re = '/üzerine (.*?) yorum/m';
         preg_match_all($re, $this->body, $matches, PREG_SET_ORDER, 0);
-        if (@$matches[0][1] != null){
+        if (@$matches[0][1] != null) {
             return $matches[0][1];
         }
         return null;

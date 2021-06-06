@@ -48,7 +48,5 @@ foreach ($filesArray as $fileName) {
     $file["comments"] = $normalizedComment;
     file_put_contents($fileName, json_encode($file));
     echo "comment yazdırıldı. -> " . $fileName . "\n";
-
-
     $forDebug = $normalizedComment;
 }
