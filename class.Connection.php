@@ -32,8 +32,8 @@ class Connection
                 $this->ifNotFolderCreateFolder(__DIR__ . "/datas/images/" . $explodedArray[0]);
                 $this->ifNotFolderCreateFolder(__DIR__ . "/datas/images/" . $explodedArray[0] . "/" . $explodedArray[1]);
                 $this->client->request('GET', $imageUrl, ['sink' => __DIR__ . "/datas/images/" . $explodedArray[0] . "/" . $explodedArray[1] . "/" . $explodedArray[2]]);
-            }else{
-                echo "catch -> ". $imageUrl;
+            } else {
+                echo "catch -> " . $imageUrl;
             }
         }
 

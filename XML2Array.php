@@ -78,7 +78,7 @@ function xmlToArray($xml, $options = array()) {
 
             if (!isset($tagsArray[$childTagName])) {
                 //only entry with this key
-                //test if tags of this type should always be arrays, no matter the element count
+                //test.php if tags of this type should always be arrays, no matter the element count
                 $tagsArray[$childTagName] =
                     in_array($childTagName, $options['alwaysArray'], true) || !$options['autoArray']
                         ? array($childProperties) : $childProperties;

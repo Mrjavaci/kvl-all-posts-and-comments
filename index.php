@@ -26,10 +26,10 @@ for ($x = 1; $x <= 39; $x++) {
     }
 }
 
-$datasFolder = array_diff(scandir(__DIR__."/datas"), array('.', '..', '.DS_Store'));
+$datasFolder = array_diff(scandir(__DIR__."/datas"), array('.', '..', '.DS_Store',"images"));
 $filesArray = array();
 foreach ($datasFolder as $folder) {
-    $files = array_diff(scandir(__DIR__."/datas/" . $folder), array('.', '..', ".DS_Store"));
+    $files = array_diff(scandir(__DIR__."/datas/" . $folder), array('.', '..', ".DS_Store","images"));
     foreach ($files as $file) {
         array_push($filesArray,__DIR__. "/datas/" . $folder . "/" . $file);
     }
@@ -39,6 +39,10 @@ echo "Comment time! \n";
 foreach ($filesArray as $fileName) {
     $file = json_decode(file_get_contents($fileName), true);
     $justId = explode("=", $file["id"])[1];
+    if ($justId == null or $justId == 0){
+        echo "error For debug";
+        return;
+    }
     $justUrl = explode("=", $file["id"])[0];
     $connection = new Connection($justUrl . "=");
     $pageBody = $connection->getBodyWithPage($justId);
