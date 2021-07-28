@@ -1,1 +1,55 @@
-{"author":{"name":"kvl","uri":"https:\/\/kvlrap.wordpress.com"},"title":{"@type":"html","$":"Si Bemol&#8217;de Pazartesi, Amiri Baraka"},"link":[{"@rel":"alternate","@type":"text\/html","@href":"https:\/\/kvlrap.wordpress.com\/2020\/08\/31\/si-bemolde-pazartesi-amiri-baraka\/"},{"@rel":"replies","@type":"text\/html","@href":"https:\/\/kvlrap.wordpress.com\/2020\/08\/31\/si-bemolde-pazartesi-amiri-baraka\/#comments","@thr:count":"0"},{"@rel":"replies","@type":"application\/atom+xml","@href":"https:\/\/kvlrap.wordpress.com\/2020\/08\/31\/si-bemolde-pazartesi-amiri-baraka\/feed\/atom\/","@thr:count":"0"}],"id":"http:\/\/kvlrap.wordpress.com\/?p=2374","updated":"2020-04-23T13:39:11Z","published":"2020-08-31T13:38:52Z","category":[{"@scheme":"https:\/\/kvlrap.wordpress.com","@term":"Terceme"},{"@scheme":"https:\/\/kvlrap.wordpress.com","@term":"\u015eiirler"}],"summary":{"@type":"html","$":"S\u0130 BEMOL\u2019DE PAZARTES\u0130, Amiri Baraka B\u00fct\u00fcn g\u00fcn dua edebilirim yine de Tanr\u0131 gelmeyebilir Ama e\u011fer ararsam 911\u2019i \u015eeytan buraya damlar \u00e2n\u0131nda! &#160; &#160; MONDAY IN B-FLAT, Amiri Baraka I can pray all day &#38; God wont come. But if I call 911 The Devil Be here in a minute!"},"content":{"@type":"html","$":"<p>S\u0130 BEMOL\u2019DE PAZARTES\u0130, Amiri Baraka<\/p>\n<p>B\u00fct\u00fcn g\u00fcn<br \/>\ndua edebilirim<br \/>\nyine de Tanr\u0131<br \/>\ngelmeyebilir<\/p>\n<p>Ama e\u011fer ararsam<br \/>\n911\u2019i<br \/>\n\u015eeytan<br \/>\nburaya damlar<\/p>\n<p>\u00e2n\u0131nda!<\/p>\n<p>&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>MONDAY IN B-FLAT, Amiri Baraka<\/p>\n<p>I can pray<br \/>\nall day<br \/>\n&amp; God<br \/>\nwont come.<\/p>\n<p>But if I call<br \/>\n911<br \/>\nThe Devil<br \/>\nBe here<\/p>\n<p>in a minute!<\/p>"},"thr:total":"0","comments":{"commentCount":null,"comments":[]}}
+{
+    "author": {
+        "name": "kvl",
+        "uri": "https:\/\/kvlrap.wordpress.com"
+    },
+    "title": {
+        "@type": "html",
+        "$": "Si Bemol&#8217;de Pazartesi, Amiri Baraka"
+    },
+    "link": [
+        {
+            "@rel": "alternate",
+            "@type": "text\/html",
+            "@href": "https:\/\/kvlrap.wordpress.com\/2020\/08\/31\/si-bemolde-pazartesi-amiri-baraka\/"
+        },
+        {
+            "@rel": "replies",
+            "@type": "text\/html",
+            "@href": "https:\/\/kvlrap.wordpress.com\/2020\/08\/31\/si-bemolde-pazartesi-amiri-baraka\/#comments",
+            "@thr:count": "0"
+        },
+        {
+            "@rel": "replies",
+            "@type": "application\/atom+xml",
+            "@href": "https:\/\/kvlrap.wordpress.com\/2020\/08\/31\/si-bemolde-pazartesi-amiri-baraka\/feed\/atom\/",
+            "@thr:count": "0"
+        }
+    ],
+    "id": "http:\/\/kvlrap.wordpress.com\/?p=2374",
+    "updated": "2020-04-23T13:39:11Z",
+    "published": "2020-08-31T13:38:52Z",
+    "category": [
+        {
+            "@scheme": "https:\/\/kvlrap.wordpress.com",
+            "@term": "Terceme"
+        },
+        {
+            "@scheme": "https:\/\/kvlrap.wordpress.com",
+            "@term": "\u015eiirler"
+        }
+    ],
+    "summary": {
+        "@type": "html",
+        "$": "S\u0130 BEMOL\u2019DE PAZARTES\u0130, Amiri Baraka B\u00fct\u00fcn g\u00fcn dua edebilirim yine de Tanr\u0131 gelmeyebilir Ama e\u011fer ararsam 911\u2019i \u015eeytan buraya damlar \u00e2n\u0131nda! &#160; &#160; MONDAY IN B-FLAT, Amiri Baraka I can pray all day &#38; God wont come. But if I call 911 The Devil Be here in a minute!"
+    },
+    "content": {
+        "@type": "html",
+        "$": "<p>S\u0130 BEMOL\u2019DE PAZARTES\u0130, Amiri Baraka<\/p>\n<p>B\u00fct\u00fcn g\u00fcn<br \/>\ndua edebilirim<br \/>\nyine de Tanr\u0131<br \/>\ngelmeyebilir<\/p>\n<p>Ama e\u011fer ararsam<br \/>\n911\u2019i<br \/>\n\u015eeytan<br \/>\nburaya damlar<\/p>\n<p>\u00e2n\u0131nda!<\/p>\n<p>&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>MONDAY IN B-FLAT, Amiri Baraka<\/p>\n<p>I can pray<br \/>\nall day<br \/>\n&amp; God<br \/>\nwont come.<\/p>\n<p>But if I call<br \/>\n911<br \/>\nThe Devil<br \/>\nBe here<\/p>\n<p>in a minute!<\/p>"
+    },
+    "thr:total": "0",
+    "comments": {
+        "commentCount": null,
+        "comments": []
+    }
+}

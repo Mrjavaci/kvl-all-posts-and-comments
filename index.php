@@ -50,7 +50,7 @@ foreach ($filesArray as $fileName) {
     $normalizedComment = $myRegexHelper->normalizeComment();
 
     $file["comments"] = $normalizedComment;
-    file_put_contents($fileName, json_encode($file));
+    file_put_contents($fileName, json_encode($file, JSON_PRETTY_PRINT));
     echo "comment yazdırıldı. -> " . $fileName . "\n";
     $forDebug = $normalizedComment;
 }
