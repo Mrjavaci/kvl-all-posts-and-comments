@@ -58,7 +58,13 @@ class RegexHelper
 
             $commenterNameRegex = '/<cite class="fn">(.*?)<\/cite>/ms';
             preg_match_all($commenterNameRegex, $realMatch, $matchesCommenterName, PREG_SET_ORDER, 0);
-            $tempArray["commenterName"] = $matchesCommenterName[0][1]; //bazı durumlarda a href ile geliyor temizlenmesi gerek.
+            if (strpos($matchesCommenterName[0][1], "<a") !== false) {
+                $commenterNameWithaRegex = '/>(.*?)<\/a>/ms';
+                preg_match_all($commenterNameWithaRegex, $matchesCommenterName[0][1], $matchesCommenterNameWithA, PREG_SET_ORDER, 0);
+                $tempArray["commenterName"] = $matchesCommenterNameWithA[0][1];
+            } else {
+                $tempArray["commenterName"] = $matchesCommenterName[0][1];
+            }
 
             $dateTimeRegex = '/datetime="(.*?)">/ms';
             preg_match_all($dateTimeRegex, $realMatch, $matchesDateTime, PREG_SET_ORDER, 0);
