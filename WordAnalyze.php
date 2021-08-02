@@ -8,12 +8,12 @@ include "WordHelper.php";
 
 $myHelper = new WordHelper();
 $mostUsedWords = $myHelper->getMostUsedWords();
-$mostUsedWords = array_slice($mostUsedWords, 0, 500);
+$mostUsedWords = array_slice($mostUsedWords, 0, 999);
 $table = "";
 $i = 0;
 foreach ($mostUsedWords as $key => $value) {
     $i++;
-    $table .= "<tr><td class=\"tg-0lax\">" . $i . "</td><td class=\"tg-0lax\">" . $key . "</td><td class=\"tg-0lax\">" . $value . "</td></tr>";
+    $table .= "<tr><td>" . $i . "</td><td>" . $key . "</td><td>" . $value . "</td></tr>";
 
 }
 
@@ -42,55 +42,65 @@ $time = " Bu çıktı " . rutime($ru, $rustart, "utime") . " ms sürdü.\n";
 <?= $time ?>
 
 <style type="text/css">
-    .tg {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
-
-    .tg td {
-        border-color: black;
-        border-style: solid;
-        border-width: 1px;
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        overflow: hidden;
-        padding: 10px 5px;
-        word-break: normal;
-    }
-
-    .tg th {
-        border-color: black;
-        border-style: solid;
-        border-width: 1px;
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        font-weight: normal;
-        overflow: hidden;
-        padding: 10px 5px;
-        word-break: normal;
-    }
-
-    .tg .tg-baqh {
+    table.darkTable {
+        font-family: "Arial Black", Gadget, sans-serif;
+        border: 2px solid #000000;
+        background-color: #4A4A4A;
+        width: 40%;
         text-align: center;
-        vertical-align: top
+        border-collapse: collapse;
     }
 
-    .tg .tg-0lax {
-        text-align: left;
-        vertical-align: top
+    table.darkTable td, table.darkTable th {
+        border: 1px solid #4A4A4A;
+        padding: 3px 3px;
+    }
+
+    table.darkTable tbody td {
+        font-size: 13px;
+        color: #E6E6E6;
+    }
+
+    table.darkTable tr:nth-child(even) {
+        background: #888888;
+    }
+
+    table.darkTable thead {
+        background: #000000;
+        border-bottom: 3px solid #000000;
+    }
+
+    table.darkTable thead th {
+        font-size: 15px;
+        color: #E6E6E6;
+        text-align: center;
+        border-left: 2px solid #4A4A4A;
+    }
+
+    table.darkTable thead th:first-child {
+        border-left: none;
+    }
+
+    table.darkTable tfoot {
+        font-size: 12px;
+        color: #E6E6E6;
+        background: #000000;
+        background: -moz-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
+        background: -webkit-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
+        background: linear-gradient(to bottom, #404040 0%, #191919 66%, #000000 100%);57rb
+        border-top: 1px solid #4A4A4A;
+    }
+
+    table.darkTable tfoot td {
+        font-size: 12px;
     }
 </style>
-<table class="tg" style="undefined;table-layout: fixed; width: 574px">
-    <colgroup>
-        <col style="width: 211px">
-        <col style="width: 219px">
-        <col style="width: 144px">
-    </colgroup>
+<table class="darkTable">
     <thead>
     <tr>
-        <th class="tg-baqh">Order</th>
-        <th class="tg-0lax">Word</th>
-        <th class="tg-0lax">Count</th>
+        <th>Order</th>
+        <th>Word</th>
+        <th>Used Count</th>
     </tr>
     </thead>
     <tbody>

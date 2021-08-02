@@ -4,7 +4,7 @@ class WordHelper
 {
     private $includeComments;
     public $allWords;
-    public $illegalChars = array("\xc2\xa0", "\xe2\x80\x93", "\n", "\r", "\"", "”", "“", "&nbsp;", " ");
+    public $illegalChars = array("\xc2\xa0", "\xe2\x80\x93", "\n", "\r", "\"", "”", "“", "&nbsp;", " ","/","2");
     public function __construct($includeComments = false)
     {
         $this->includeComments = $includeComments;
@@ -55,7 +55,6 @@ class WordHelper
             }
         }
         $retArray = $this->normalizeArray($retArray);
-        echo "\$i->>>" . $i . "\n";
         $this->saveData($retArray);
         return $retArray;
     }
