@@ -4,7 +4,7 @@ class WordHelper
 {
     private $includeComments;
     public $allWords;
-
+    public $illegalChars = array("\xc2\xa0", "\xe2\x80\x93", "\n", "\r", "\"", "”", "“", "&nbsp;", " ");
     public function __construct($includeComments = false)
     {
         $this->includeComments = $includeComments;
@@ -22,14 +22,14 @@ class WordHelper
             $content = $this->removeHtmlTags($content);
             $ex = explode(" ", $content);
             foreach ($ex as $str) {
+                $str = mb_strtolower($str);
                 $exForDots = explode(".", $str);
                 $exForComma = explode(",", $str);
                 $count = count($exForDots);
                 if (count($exForDots) > 1) {
                     foreach ($exForDots as $dots) {
-                        $dots = str_replace(array("\n", "\r", "\"", "”", "“"), '', $dots);
+                        $dots = str_replace($this->illegalChars, '', $dots);
                         if ($dots != "" or $dots != null) {
-                            //              $dots = preg_replace('/[\x00-\x1F\x7F-\xFF]/', '', $dots);
                             array_push($retArray, $dots);
                             $i++;
 
@@ -37,20 +37,20 @@ class WordHelper
                     }
                 } else if (count($exForComma) > 1) {
                     foreach ($exForComma as $commas) {
-                        $commas = str_replace(array("\n", "\r", "\"", "”", "“"), '', $commas);
+                        $commas = str_replace($this->illegalChars, '', $commas);
                         if ($commas != "" or $commas != null or $commas != " ") {
-                            //            $commas = preg_replace('/[\x00-\x1F\x7F-\xFF]/', '', $commas);
                             array_push($retArray, $commas);
                             $i++;
                         }
                     }
                 } else {
-                    $i++;
-                    $str = str_replace(array("\n", "\r", "\"", "”"), '', $str);
-                    //       $str = preg_replace('/[\x00-\x1F\x7F-\xFF]/', '', $str);
-                    $str = str_replace(array("\n", "\r"), '', $str);
-                    if ($str != "" or $str != null or $str != " " or !ctype_space($str))
+                    $str = str_replace($this->illegalChars, '', $str);
+
+                    if ($str != "" or $str != null or $str != " " or !ctype_space($str)) {
                         array_push($retArray, $str);
+                        $i++;
+
+                    }
                 }
             }
         }
