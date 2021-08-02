@@ -23,13 +23,10 @@ class WordHelper
                 $exForDots = explode(".", $str);
                 $exForComma = explode(",", $str);
                 $count = count($exForDots);
-                if ($i == 342671) {
-                    echo "a";
-                }
                 if (count($exForDots) > 1) {
                     foreach ($exForDots as $dots) {
-                        $dots = str_replace(array("\n", "\r", "\""), '', $dots);
-                        if ($dots != "" or $dots != null or $dots != " " or !ctype_space($str)) {
+                        $dots = str_replace(array("\n", "\r", "\"", "”", "“"), '', $dots);
+                        if ($dots != "" or $dots != null) {
                             //              $dots = preg_replace('/[\x00-\x1F\x7F-\xFF]/', '', $dots);
                             array_push($retArray, $dots);
                             $i++;
@@ -38,17 +35,15 @@ class WordHelper
                     }
                 } else if (count($exForComma) > 1) {
                     foreach ($exForComma as $commas) {
-                        $commas = str_replace(array("\n", "\r", "\"", "”"), '', $commas);
-                        if ($commas != "" or $commas != null or $commas != " " or !ctype_space($str)) {
+                        $commas = str_replace(array("\n", "\r", "\"", "”", "“"), '', $commas);
+                        if ($commas != "" or $commas != null or $commas != " ") {
                             //            $commas = preg_replace('/[\x00-\x1F\x7F-\xFF]/', '', $commas);
                             array_push($retArray, $commas);
                             $i++;
-
                         }
                     }
                 } else {
                     $i++;
-
                     $str = str_replace(array("\n", "\r", "\"", "”"), '', $str);
                     //       $str = preg_replace('/[\x00-\x1F\x7F-\xFF]/', '', $str);
                     $str = str_replace(array("\n", "\r"), '', $str);
@@ -57,8 +52,10 @@ class WordHelper
                 }
             }
         }
+        $retArray = $this->normalizeArray($retArray);
         print_r($retArray);
         echo "\$i->>>" . $i . "\n";
+        $this->saveData($retArray);
         return $retArray;
     }
 
@@ -78,6 +75,24 @@ class WordHelper
     private function removeHtmlTags(string $str): string
     {
         return strip_tags($str);
+    }
+
+    private function normalizeArray(array $retArray): array
+    {
+        $arr = array();
+        foreach ($retArray as $value) {
+            if ($value != "") {
+                array_push($arr, $value);
+            }
+        }
+        return $arr;
+    }
+
+    private function saveData(array $retArray)
+    {
+        if (SaveData) {
+            file_put_contents("AllWords.json", json_encode($retArray));
+        }
     }
 }
 
