@@ -11,7 +11,8 @@
         "guzzlehttp/guzzle": "^7.0",
       "ext-simplexml": "*",
         "laravie/parser": "^2.0",
-        "ext-json": "*"
+        "ext-json": "*",
+        "donquixote/cellbrush": "^1.0"
     },
     "description": ""
 }

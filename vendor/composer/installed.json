@@ -77,6 +77,47 @@
             "install-path": "../debril/feed-io"
         },
         {
+            "name": "donquixote/cellbrush",
+            "version": "v1.0.5",
+            "version_normalized": "1.0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/donquixote/cellbrush.git",
+                "reference": "09c70b421828624756e56591de41d5e86030f50e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/donquixote/cellbrush/zipball/09c70b421828624756e56591de41d5e86030f50e",
+                "reference": "09c70b421828624756e56591de41d5e86030f50e",
+                "shasum": ""
+            },
+            "time": "2016-05-18T16:51:39+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Donquixote\\Cellbrush\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Hennings",
+                    "email": "andreas@dqxtech.net"
+                }
+            ],
+            "description": "Library to generate HTML tables.",
+            "homepage": "http://github.com/donquixote/cellbrush",
+            "support": {
+                "issues": "https://github.com/donquixote/cellbrush/issues",
+                "source": "https://github.com/donquixote/cellbrush/tree/1.0"
+            },
+            "install-path": "../donquixote/cellbrush"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "7.3.0",
             "version_normalized": "7.3.0.0",

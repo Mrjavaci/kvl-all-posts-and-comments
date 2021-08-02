@@ -63,6 +63,10 @@ class ComposerStaticInit474a8a52e3c8b6740f51fe50badb63ec
         array (
             'FeedIo\\' => 7,
         ),
+        'D' => 
+        array (
+            'Donquixote\\Cellbrush\\' => 21,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -145,6 +149,10 @@ class ComposerStaticInit474a8a52e3c8b6740f51fe50badb63ec
         'FeedIo\\' => 
         array (
             0 => __DIR__ . '/..' . '/debril/feed-io/src/FeedIo',
+        ),
+        'Donquixote\\Cellbrush\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/donquixote/cellbrush/src',
         ),
     );
 

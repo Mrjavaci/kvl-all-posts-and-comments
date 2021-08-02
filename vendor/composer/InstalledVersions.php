@@ -27,12 +27,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'd82aea3a829616b481b2ee10c3d0b255b337475b',
     'name' => 'javaci/php-rss',
   ),
   'versions' => 
@@ -45,6 +45,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '810dfaae9fb89eb6df559b45ccf2db6c7e5a14f3',
+    ),
+    'donquixote/cellbrush' => 
+    array (
+      'pretty_version' => 'v1.0.5',
+      'version' => '1.0.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '09c70b421828624756e56591de41d5e86030f50e',
     ),
     'guzzlehttp/guzzle' => 
     array (
@@ -75,12 +84,12 @@ private static $installed = array (
     ),
     'javaci/php-rss' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'd82aea3a829616b481b2ee10c3d0b255b337475b',
     ),
     'laravie/parser' => 
     array (

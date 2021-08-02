@@ -3,10 +3,12 @@
 class WordHelper
 {
     private $includeComments;
+    public $allWords;
 
     public function __construct($includeComments = false)
     {
         $this->includeComments = $includeComments;
+        $this->allWords = $this->getAllWords();
     }
 
     public function getAllWords()
@@ -53,7 +55,6 @@ class WordHelper
             }
         }
         $retArray = $this->normalizeArray($retArray);
-        print_r($retArray);
         echo "\$i->>>" . $i . "\n";
         $this->saveData($retArray);
         return $retArray;
@@ -93,6 +94,13 @@ class WordHelper
         if (SaveData) {
             file_put_contents("AllWords.json", json_encode($retArray));
         }
+    }
+
+    public function getMostUsedWords()
+    {
+        $array_count_values = array_count_values($this->allWords);
+        arsort($array_count_values);
+        return $array_count_values;
     }
 }
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "35708c4ce0818aaa06c09c1cac992820",
+    "content-hash": "ec8669cc5a07782bcf828f40207533b4",
     "packages": [
         {
             "name": "debril/feed-io",
@@ -78,6 +78,44 @@
                 }
             ],
             "time": "2021-04-20T20:30:38+00:00"
+        },
+        {
+            "name": "donquixote/cellbrush",
+            "version": "v1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/donquixote/cellbrush.git",
+                "reference": "09c70b421828624756e56591de41d5e86030f50e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/donquixote/cellbrush/zipball/09c70b421828624756e56591de41d5e86030f50e",
+                "reference": "09c70b421828624756e56591de41d5e86030f50e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Donquixote\\Cellbrush\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Hennings",
+                    "email": "andreas@dqxtech.net"
+                }
+            ],
+            "description": "Library to generate HTML tables.",
+            "homepage": "http://github.com/donquixote/cellbrush",
+            "support": {
+                "issues": "https://github.com/donquixote/cellbrush/issues",
+                "source": "https://github.com/donquixote/cellbrush/tree/1.0"
+            },
+            "time": "2016-05-18T16:51:39+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1523,7 +1561,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "ext-simplexml": "*"
+        "ext-simplexml": "*",
+        "ext-json": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"

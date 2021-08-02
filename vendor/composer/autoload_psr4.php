@@ -26,4 +26,5 @@ return array(
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
     'FeedIo\\' => array($vendorDir . '/debril/feed-io/src/FeedIo'),
+    'Donquixote\\Cellbrush\\' => array($vendorDir . '/donquixote/cellbrush/src'),
 );
