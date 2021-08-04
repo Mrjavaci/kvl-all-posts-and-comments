@@ -6,7 +6,7 @@ $rustart = getrusage();
 include "vendor/autoload.php";
 include "WordHelper.php";
 
-$myHelper = new WordHelper();
+$myHelper = new WordHelper(true);
 $mostUsedWords = $myHelper->getMostUsedWords();
 $mostUsedWords = array_slice($mostUsedWords, 0, 999);
 $table = "";

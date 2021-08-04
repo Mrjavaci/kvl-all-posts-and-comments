@@ -4,7 +4,8 @@ class WordHelper
 {
     private $includeComments;
     public $allWords;
-    public $illegalChars = array("\xc2\xa0", "\xe2\x80\x93", "\n", "\r", "\"", "”", "“", "&nbsp;", " ","/","2");
+    public $illegalChars = array("\xc2\xa0", "\xe2\x80\x93", "\n", "\r", "\"", "”", "“", "&nbsp;", " ", "/", "2", ";");
+
     public function __construct($includeComments = false)
     {
         $this->includeComments = $includeComments;
@@ -19,6 +20,11 @@ class WordHelper
         foreach ($filePaths as $fileName) {
             $json = json_decode(file_get_contents($fileName), true);
             $content = $json["content"]["$"];
+            if ($this->includeComments) {
+                foreach ($json["comments"]["comments"] as $comment) {
+                    $content .= $comment["commentBody"];
+                }
+            }
             $content = $this->removeHtmlTags($content);
             $ex = explode(" ", $content);
             foreach ($ex as $str) {
@@ -45,7 +51,6 @@ class WordHelper
                     }
                 } else {
                     $str = str_replace($this->illegalChars, '', $str);
-
                     if ($str != "" or $str != null or $str != " " or !ctype_space($str)) {
                         array_push($retArray, $str);
                         $i++;
