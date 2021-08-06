@@ -1,9 +1,9 @@
 <?php
 
 include "vendor/autoload.php";
-include "XML2Array.php";
-include "class.Connection.php";
-include "class.RegexHelper.php";
+include "Helpers/XML2Array.php";
+include "Helpers/class.Connection.php";
+include "Helpers/class.RegexHelper.php";
 
 
 for ($x = 1; $x <= 39; $x++) {

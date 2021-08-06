@@ -27,6 +27,10 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/tightenco/collect" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laravie/parser" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/donquixote/cellbrush" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/php-serializer/php-serializer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/flatbase/flatbase" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-factory" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

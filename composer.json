@@ -1,18 +1,19 @@
 {
-    "name": "javaci/php-rss",
-    "authors": [
-        {
-            "name": "Mrjavaci",
-            "email": "tr.osmantaha@gmail.com"
-        }
-    ],
-    "require": {
-        "debril/feed-io": "^4.9",
-        "guzzlehttp/guzzle": "^7.0",
-      "ext-simplexml": "*",
-        "laravie/parser": "^2.0",
-        "ext-json": "*",
-        "donquixote/cellbrush": "^1.0"
-    },
-    "description": ""
+  "name": "javaci/php-rss",
+  "authors": [
+    {
+      "name": "Mrjavaci",
+      "email": "tr.osmantaha@gmail.com"
+    }
+  ],
+  "require": {
+    "debril/feed-io": "^4.9",
+    "guzzlehttp/guzzle": "^7.0",
+    "ext-simplexml": "*",
+    "laravie/parser": "^2.0",
+    "ext-json": "*",
+    "flatbase/flatbase": "^0.4.1",
+    "donquixote/cellbrush": "^1.0"
+  },
+  "description": ""
 }

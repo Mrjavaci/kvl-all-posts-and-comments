@@ -25,6 +25,10 @@
       <path value="$PROJECT_DIR$/vendor/tightenco/collect" />
       <path value="$PROJECT_DIR$/vendor/laravie/parser" />
       <path value="$PROJECT_DIR$/vendor/donquixote/cellbrush" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/php-serializer/php-serializer" />
+      <path value="$PROJECT_DIR$/vendor/flatbase/flatbase" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0">
