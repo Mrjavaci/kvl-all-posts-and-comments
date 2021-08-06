@@ -4,7 +4,7 @@ class WordHelper
 {
     private $includeComments;
     public $allWords;
-    public $illegalChars = array("\xc2\xa0", "\xe2\x80\x93", "\n", "\r", "\"", "”", "“", "&nbsp;", " ", "/", "2", ";");
+    public $illegalChars = array("\xc2\xa0", "\xe2\x80\x93", "\n", "\r", "\"", "”", "“", "&nbsp;", " ", "/", "2", ";", ")", "(");
 
     public function __construct($includeComments = false)
     {

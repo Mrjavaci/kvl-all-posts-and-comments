@@ -1,11 +1,10 @@
 <?php
 const SaveData = false;
-
 $rustart = getrusage();
 
 include "vendor/autoload.php";
 include "WordHelper.php";
-
+$startMemory = memory_get_usage();
 $myHelper = new WordHelper(true);
 $mostUsedWords = $myHelper->getMostUsedWords();
 $mostUsedWords = array_slice($mostUsedWords, 0, 999);
@@ -25,8 +24,8 @@ function rutime($ru, $rus, $index)
 }
 
 $ru = getrusage();
-$time = " Bu çıktı " . rutime($ru, $rustart, "utime") . " ms sürdü.\n";
 
+$time = " Bu çıktı " . rutime($ru, $rustart, "utime") . " ms sürdü.\n";
 ?>
 
 <html lang="tr">
@@ -87,7 +86,8 @@ $time = " Bu çıktı " . rutime($ru, $rustart, "utime") . " ms sürdü.\n";
         background: #000000;
         background: -moz-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
         background: -webkit-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
-        background: linear-gradient(to bottom, #404040 0%, #191919 66%, #000000 100%);57rb
+        background: linear-gradient(to bottom, #404040 0%, #191919 66%, #000000 100%);
+        57 rb
         border-top: 1px solid #4A4A4A;
     }
 
