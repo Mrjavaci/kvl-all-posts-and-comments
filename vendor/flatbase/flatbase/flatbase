@@ -1,0 +1,33 @@
+#!/usr/bin/php
+<?php
+
+foreach (array(__DIR__ . '/../../autoload.php', __DIR__ . '/../vendor/autoload.php', __DIR__ . '/vendor/autoload.php') as $file) {
+    if (file_exists($file)) {
+        $autoloadPath = $file;
+        break;
+    }
+}
+
+unset($file);
+
+if (!isset($autoloadPath)) {
+    fwrite(STDERR,
+        'You need to set up the project dependencies using the following commands:' . PHP_EOL .
+        'wget http://getcomposer.org/composer.phar' . PHP_EOL .
+        'php composer.phar install' . PHP_EOL
+    );
+    die(1);
+}
+
+require $autoloadPath;
+
+// @TODO Move bootstrapping to separate file
+$console = new \Symfony\Component\Console\Application('flatbase');
+$console->add(new \Flatbase\Console\Commands\ReadCommand(
+        new \Symfony\Component\VarDumper\Cloner\VarCloner(),
+        new \Flatbase\Console\Dumper()
+));
+$console->add(new \Flatbase\Console\Commands\InsertCommand());
+$console->add(new \Flatbase\Console\Commands\DeleteCommand());
+$console->add(new \Flatbase\Console\Commands\UpdateCommand());
+$console->run();
