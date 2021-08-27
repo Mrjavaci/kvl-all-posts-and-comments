@@ -39,7 +39,7 @@
     },
     "content": {
         "@type": "html",
-        "$": "<div class=\"jetpack-video-wrapper\"><iframe class='youtube-player' width='676' height='381' src='https:\/\/www.youtube.com\/embed\/drAThcWEeAs?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=tr&#038;autohide=2&#038;wmode=transparent' allowfullscreen='true' style='border:0;' sandbox='allow-scripts allow-same-origin allow-popups allow-presentation'><\/iframe><\/div>\n<p>\u0130\u015ffe len\u00e2 yevmel-aras\u00e2t\u00ee vel-m\u00eez\u00e2n<br \/>\n\u0130rhem bi fadlike y\u00e2 rabbel-\u00e2lem\u00een<br \/>\nLimen kale min ab\u00eedike \u00e2min.<\/p>\n<p>&nbsp;<\/p>"
+        "$": "<div class=\"jetpack-video-wrapper\"><iframe class=\"youtube-player\" width=\"676\" height=\"381\" src=\"https:\/\/www.youtube.com\/embed\/drAThcWEeAs?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=tr&#038;autohide=2&#038;wmode=transparent\" allowfullscreen=\"true\" style=\"border:0;\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"><\/iframe><\/div>\n<p>\u0130\u015ffe len\u00e2 yevmel-aras\u00e2t\u00ee vel-m\u00eez\u00e2n<br \/>\n\u0130rhem bi fadlike y\u00e2 rabbel-\u00e2lem\u00een<br \/>\nLimen kale min ab\u00eedike \u00e2min.<\/p>\n<p>&nbsp;<\/p>"
     },
     "thr:total": "0",
     "comments": {

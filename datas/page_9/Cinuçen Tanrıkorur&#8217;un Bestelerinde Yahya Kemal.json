@@ -44,7 +44,7 @@
     },
     "content": {
         "@type": "html",
-        "$": "<div class=\"jetpack-video-wrapper\"><iframe class='youtube-player' width='676' height='381' src='https:\/\/www.youtube.com\/embed\/1RJr15tCGjA?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=tr&#038;autohide=2&#038;wmode=transparent' allowfullscreen='true' style='border:0;' sandbox='allow-scripts allow-same-origin allow-popups allow-presentation'><\/iframe><\/div>"
+        "$": "<div class=\"jetpack-video-wrapper\"><iframe class=\"youtube-player\" width=\"676\" height=\"381\" src=\"https:\/\/www.youtube.com\/embed\/1RJr15tCGjA?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=tr&#038;autohide=2&#038;wmode=transparent\" allowfullscreen=\"true\" style=\"border:0;\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"><\/iframe><\/div>"
     },
     "thr:total": "0",
     "comments": {

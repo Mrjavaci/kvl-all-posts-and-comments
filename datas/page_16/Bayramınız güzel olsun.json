@@ -38,7 +38,7 @@
     },
     "content": {
         "@type": "html",
-        "$": "<figure class=\"wp-block-embed-youtube wp-block-embed is-type-rich wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\n<div class=\"jetpack-video-wrapper\"><iframe class='youtube-player' width='676' height='381' src='https:\/\/www.youtube.com\/embed\/LWSZV--SfHE?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=tr&#038;autohide=2&#038;wmode=transparent' allowfullscreen='true' style='border:0;' sandbox='allow-scripts allow-same-origin allow-popups allow-presentation'><\/iframe><\/div>\n<\/div><\/figure>"
+        "$": "<figure class=\"wp-block-embed-youtube wp-block-embed is-type-rich wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\n<div class=\"jetpack-video-wrapper\"><iframe class=\"youtube-player\" width=\"676\" height=\"381\" src=\"https:\/\/www.youtube.com\/embed\/LWSZV--SfHE?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=tr&#038;autohide=2&#038;wmode=transparent\" allowfullscreen=\"true\" style=\"border:0;\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"><\/iframe><\/div>\n<\/div><\/figure>"
     },
     "thr:total": "5",
     "comments": {
