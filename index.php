@@ -10,7 +10,8 @@ for ($x = 1; $x <= 39; $x++) {
     $connection = new Connection("https://kvlrap.wordpress.com/feed/atom/?post_type=post&paged=");
     $body = $connection->getBodyWithPage($x);
     try {
-        $arr = xmlToArray(simplexml_load_string($body));
+        $xmlToArray = new XML2Array(simplexml_load_string($body));
+        $arr = $xmlToArray->xmlToArray();
         foreach ($arr["feed"]["entry"] as $value) {
             $title = $value["title"]["$"];
             if (!is_dir(__DIR__ . "/datas/page_" . $x)) {
