@@ -13,7 +13,9 @@
     "laravie/parser": "^2.0",
     "ext-json": "*",
     "flatbase/flatbase": "^0.4.1",
-    "donquixote/cellbrush": "^1.0"
+    "donquixote/cellbrush": "^1.0",
+    "nesbot/carbon": "^2.52"
+
   },
   "description": ""
 }
