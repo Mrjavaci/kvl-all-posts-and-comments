@@ -3,20 +3,20 @@
 require_once "../vendor/autoload.php";
 require_once "../Helpers/FlatFileDatabaseHelper.php";
 
-$isAddData = false;
+$isAddData = true;
 
 $datasFolder = array_diff(scandir("../datas"), array('.', '..', '.DS_Store', "images"));
 $filesArray = array();
 foreach ($datasFolder as $folder) {
     $files = array_diff(scandir("../datas/" . $folder), array('.', '..', ".DS_Store", "images"));
     foreach ($files as $file) {
-        array_push($filesArray, "../datas/" . $file);
+        array_push($filesArray, "../datas/" . $folder . "/" . $file);
     }
 }
 $flatHelper = new FlatFileDatabaseHelper();
 if ($isAddData) {
     foreach ($filesArray as $fileName) {
-        $file = json_decode(file_get_contents($fileName), true);
+        $file = json_decode(file_get_contents(__DIR__ . "/" . $fileName), true);
 
         $title = $file["title"]["$"];
         $updated = $file["updated"];
