@@ -1,7 +1,7 @@
 {
     "author": {
         "name": "kvl",
-        "uri": "http:\/\/kvlrap.wordpress.com"
+        "uri": "https:\/\/kvlrap.wordpress.com"
     },
     "title": {
         "@type": "html",
@@ -26,7 +26,7 @@
             "@thr:count": "1"
         }
     ],
-    "id": "https:\/\/kvlrap.wordpress.com\/?p=361",
+    "id": "http:\/\/kvlrap.wordpress.com\/?p=361",
     "updated": "2020-01-22T15:20:16Z",
     "published": "2018-03-11T17:05:52Z",
     "category": {
@@ -50,7 +50,7 @@
                 "commenterName": "dracat",
                 "dateTime": "2020-02-05T19:33:11+03:00",
                 "commentBody": "Bombalanm\u0131\u015f \u015fehirleri umursuyorum<br \/>\nYanm\u0131\u015f derileri umursuyorum<br \/>\n\u0130nsanlar\u0131n\u0131, bayraklar\u0131n\u0131, d\u00fcnyalar\u0131n\u0131 tutmaya \u00e7al\u0131\u015ft\u0131klar\u0131nda<br \/>\nKaydedilmemi\u015f CD\u2019lerini umursuyorum",
-                "commentLikeCount": "2"
+                "commentLikeCount": "3"
             }
         ]
     }

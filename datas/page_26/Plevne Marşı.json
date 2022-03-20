@@ -1,7 +1,7 @@
 {
     "author": {
         "name": "kvl",
-        "uri": "http:\/\/kvlrap.wordpress.com"
+        "uri": "https:\/\/kvlrap.wordpress.com"
     },
     "title": {
         "@type": "html",
@@ -26,7 +26,7 @@
             "@thr:count": "1"
         }
     ],
-    "id": "https:\/\/kvlrap.wordpress.com\/?p=2767",
+    "id": "http:\/\/kvlrap.wordpress.com\/?p=2767",
     "updated": "2020-05-10T08:17:25Z",
     "published": "2020-05-10T08:19:40Z",
     "category": {
@@ -50,7 +50,7 @@
                 "commenterName": "esocraton",
                 "dateTime": "2020-05-11T01:09:59+03:00",
                 "commentBody": "\u201c\u00d6lenler<br \/>\n            d\u00f6\u011f\u00fc\u015ferek \u00f6ld\u00fcler;<br \/>\n                                         g\u00fcne\u015fe g\u00f6m\u00fcld\u00fcler.\u201d",
-                "commentLikeCount": "1"
+                "commentLikeCount": "2"
             }
         ]
     }

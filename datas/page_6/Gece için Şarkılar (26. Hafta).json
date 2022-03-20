@@ -1,7 +1,7 @@
 {
     "author": {
         "name": "kvl",
-        "uri": "http:\/\/kvlrap.wordpress.com"
+        "uri": "https:\/\/kvlrap.wordpress.com"
     },
     "title": {
         "@type": "html",
@@ -26,7 +26,7 @@
             "@thr:count": "0"
         }
     ],
-    "id": "https:\/\/kvlrap.wordpress.com\/?p=4190",
+    "id": "http:\/\/kvlrap.wordpress.com\/?p=4190",
     "updated": "2020-12-29T17:15:49Z",
     "published": "2021-01-06T19:00:00Z",
     "category": [
